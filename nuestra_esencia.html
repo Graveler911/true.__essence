@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Esencia | True Essence</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --kraft-paper: #d2b48c; 
+            --earth-brown: #5d4037; 
+            --soft-cream: #f4f1ea; 
+        }
+        
+        body { 
+            font-family: 'Nanum Myeongjo', serif; 
+            background-color: var(--soft-cream); 
+            color: var(--earth-brown); 
+            line-height: 1.6;
+        }
+
+        .brand-font { 
+            font-family: 'Dancing Script', cursive; 
+        }
+
+        /* Estilo para la imagen con toque rústico */
+        .img-artesanal { 
+            border: 8px solid white; 
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.1); 
+            transform: rotate(-1deg); 
+            width: 100%; 
+            height: auto; 
+            transition: transform 0.5s ease;
+        }
+
+        .img-artesanal:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        /* Botón de volver corregido */
+        .back-link { 
+            color: var(--earth-brown); 
+            text-decoration: none; 
+            border-bottom: 1px solid var(--kraft-paper); 
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--kraft-paper);
+            border-bottom-color: var(--earth-brown);
+        }
+
+        .essence-container {
+            max-width: 900px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container py-5 essence-container">
+        <div class="text-center mb-5">
+            <a href="index.html" class="back-link mb-3 d-inline-block">← Volver al inicio</a>
+            <h1 class="brand-font display-3">Nuestra Esencia</h1>
+        </div>
+
+        <div class="row align-items-center g-5">
+            <div class="col-md-6">
+                <img src="todo.png" alt="Proceso artesanal True Essence" class="img-artesanal">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-4">Hecho a mano, con respeto</h2>
+                <p>En <strong>True Essence</strong>, creemos que la belleza no debería venir de un laboratorio, sino de la tierra. Cada producto nace en nuestra cocina artesanal, utilizando vegetales frescos y técnicas tradicionales.</p>
+                
+                <p>Desde el <strong>mucílago de cacao</strong> que extraemos con cuidado, hasta el color vibrante de la <strong>remolacha</strong> en nuestros lipsticks, cada ingrediente es seleccionado por sus propiedades reales y su bajo impacto ambiental.</p>
+                
+                <p class="fst-italic mt-4" style="color: var(--kraft-paper);">
+                    "No vendemos cosméticos, compartimos los secretos que la naturaleza ya nos dio."
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center py-4 mt-5 border-top">
+        <p class="brand-font fs-4">True Essence</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
